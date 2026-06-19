@@ -1,0 +1,9 @@
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0
+openai==1.58.1
+pandas==2.2.3
+numpy==1.26.4
+tqdm==4.67.1
+python-docx==1.1.2
+streamlit==1.41.1
+pyarrow==18.1.0
