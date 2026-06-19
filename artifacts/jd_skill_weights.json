@@ -1,0 +1,23 @@
+{
+  "embeddings": 1.0,
+  "vector databases": 1.0,
+  "python": 1.0,
+  "ranking systems": 1.0,
+  "evaluation frameworks": 1.0,
+  "llm fine-tuning": 0.5,
+  "learning-to-rank models": 0.5,
+  "distributed systems": 0.5,
+  "large-scale inference optimization": 0.5,
+  "hybrid search": 1.0,
+  "retrieval systems": 1.0,
+  "a/b testing": 1.0,
+  "offline benchmarks": 0.5,
+  "recruiter feedback loops": 0.5,
+  "open-source contributions": 0.5,
+  "machine learning": 1.0,
+  "data structures": 0.5,
+  "algorithms": 0.5,
+  "software engineering": 1.0,
+  "product development": 0.5,
+  "NLP": 1.0
+}

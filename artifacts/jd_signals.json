@@ -1,0 +1,46 @@
+{
+  "signals": [
+    {
+      "key": "production_experience_with_embeddings",
+      "question": "Has the candidate built and deployed embeddings-based retrieval systems to real users?",
+      "weight": 0.2
+    },
+    {
+      "key": "experience_with_vector_databases",
+      "question": "Has the candidate worked with vector databases or hybrid search infrastructure in a production environment?",
+      "weight": 0.2
+    },
+    {
+      "key": "hands_on_evaluation_frameworks",
+      "question": "Has the candidate designed evaluation frameworks for ranking systems, including metrics like NDCG or A/B testing?",
+      "weight": 0.2
+    },
+    {
+      "key": "end_to_end_systems",
+      "question": "Has the candidate shipped an end-to-end ranking, search, or recommendation system at meaningful scale?",
+      "weight": 0.2
+    },
+    {
+      "key": "startup_experience",
+      "question": "Has the candidate spent a significant portion of their career in early-stage startups rather than large tech companies or consulting firms?",
+      "weight": 0.1
+    },
+    {
+      "key": "recent_production_code",
+      "question": "Has the candidate written production code in the last 18 months?",
+      "weight": 0.1
+    }
+  ],
+  "red_flag_patterns": [
+    "career spent entirely in research environments without production deployment",
+    "recent experience limited to using frameworks like LangChain for simple tasks",
+    "career trajectory focused on title optimization with frequent job changes",
+    "entire career in consulting firms without product company experience",
+    "primary expertise in domains like computer vision or robotics without NLP/IR exposure"
+  ],
+  "preferred_company_types": [
+    "early-stage startups",
+    "AI/ML product companies",
+    "technology companies with a focus on product development"
+  ]
+}
