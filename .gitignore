@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Environment & secrets
+.env
+*.env
+
+# Large data files — never commit these
+India_runs_data_and_ai_challenge/candidates.json
+*.json.gz
+
+# Artifacts — DO commit these after each phase (except the large FAISS index if >100MB)
+# artifacts/candidates.faiss   ← uncomment if too large for git
+# artifacts/features.parquet   ← keep committed
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Submission output (regenerate with rank.py — do not commit)
+submission.csv
