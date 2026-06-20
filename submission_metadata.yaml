@@ -22,7 +22,10 @@ github_repo: "https://github.com/PrateekApurva/resume-shortlister"
 
 sandbox_link: "https://huggingface.co/spaces/PrateekApurva/resume-shortlister"
 
-reproduce_command: "python rank.py"
+reproduce_command: |
+  # artifacts/candidates.faiss is excluded from git (146 MB) — rebuild first:
+  python precompute.py   # ~45 min, CPU only, no API calls
+  python rank.py         # 4.1 seconds, CPU only, no API calls → submission.csv
 
 # ============================================================================
 # Compute environment
