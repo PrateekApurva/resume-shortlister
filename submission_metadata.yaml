@@ -1,0 +1,65 @@
+# Redrob Hackathon — Submission Metadata
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "resume-shotlister"
+
+primary_contact:
+  name: "Prateek Apurva"
+  email: "prateekapurva269@gmail.com"
+  phone: "+91-XXXXXXXXXX"          # ← fill in your phone number
+
+team_members:
+  - name: "Prateek Apurva"
+    email: "prateekapurva269@gmail.com"
+    role: "Solo"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/PrateekApurva/resume-shortlister"
+
+sandbox_link: "https://huggingface.co/spaces/PrateekApurva/resume-shortlister"
+# ← update this once the HuggingFace Space is live
+
+reproduce_command: "python rank.py"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Air (Apple Silicon)"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14.0"
+  os: "macOS 25.5.0"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 75   # Phase 0 (~1 min) + Phase 1 (~45 min) + Phase 2 (~30 min)
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Four-phase offline+online pipeline. Phase 0: one GPT-4o-mini call decomposes
+  the JD into 6 boolean signals, 21 skill weights, and a focused prose query.
+  Phase 1: for all 100K candidates, extracts structured features (honeypot check,
+  location, availability, career quality, skill fit) and embeds work narratives
+  (career history only — no skills section) using all-MiniLM-L6-v2 into a FAISS
+  IndexFlatIP. Phase 2: FAISS retrieves top 2,000 by cosine similarity; GPT-4o-mini
+  extracts 6 boolean work-evidence signals per candidate (20 parallel workers);
+  top 200 get recruiter-style reasoning. Phase 3 (judges run this): embed JD →
+  FAISS search → score 2,000 with weighted formula → top 100 to CSV in 4 seconds.
+  Honeypot multiplier (0 or 1) eliminates impossible profiles before scoring.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
