@@ -21,7 +21,6 @@ team_members:
 github_repo: "https://github.com/PrateekApurva/resume-shortlister"
 
 sandbox_link: "https://huggingface.co/spaces/PrateekApurva/resume-shortlister"
-# ← update this once the HuggingFace Space is live
 
 reproduce_command: "python rank.py"
 
