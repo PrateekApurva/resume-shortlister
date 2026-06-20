@@ -3,12 +3,12 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "resume-shotlister"
+team_name: "Trendy Brains"
 
 primary_contact:
   name: "Prateek Apurva"
   email: "prateekapurva269@gmail.com"
-  phone: "+91-XXXXXXXXXX"          # ← fill in your phone number
+  phone: "+91-8306573385"
 
 team_members:
   - name: "Prateek Apurva"
