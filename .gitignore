@@ -19,8 +19,8 @@ env/
 India_runs_data_and_ai_challenge/candidates.json
 *.json.gz
 
-# Artifacts — DO commit these after each phase (except the large FAISS index if >100MB)
-# artifacts/candidates.faiss   ← uncomment if too large for git
+# Artifacts — DO commit these after each phase (except the large FAISS index — 146MB > GitHub limit)
+artifacts/candidates.faiss
 # artifacts/features.parquet   ← keep committed
 
 # OS
