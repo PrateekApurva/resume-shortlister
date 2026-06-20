@@ -3,6 +3,8 @@
 **Redrob "Intelligent Candidate Discovery & Ranking Challenge"**  
 Ranks 100,000 candidates for a Senior AI Engineer role and outputs the top 100 with scores and recruiter-style reasoning.
 
+**Live demo:** [huggingface.co/spaces/PrateekApurva/resume-shortlister](https://huggingface.co/spaces/PrateekApurva/resume-shortlister)
+
 ---
 
 ## The Core Idea
